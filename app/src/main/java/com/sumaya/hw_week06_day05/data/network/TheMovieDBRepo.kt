@@ -5,7 +5,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 class TheMovieDBRepo {
-    private val api = TheMovieDBBuilder.flickrApi
+    private val api = TheMovieDBBuilder.movieDBApi
 
     suspend fun fetchInterestingList(): TheMovieDBData = withContext(Dispatchers.IO) {
         api.fetchMovies()

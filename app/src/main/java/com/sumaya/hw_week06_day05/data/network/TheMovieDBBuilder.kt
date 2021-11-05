@@ -10,5 +10,5 @@ object TheMovieDBBuilder {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val flickrApi: TheMovieDBAPI = retrofit().create(TheMovieDBAPI::class.java)
+    val movieDBApi: TheMovieDBAPI = retrofit().create(TheMovieDBAPI::class.java)
 }
