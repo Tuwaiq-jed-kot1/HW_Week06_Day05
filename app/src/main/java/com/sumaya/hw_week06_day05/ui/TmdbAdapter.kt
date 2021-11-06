@@ -10,7 +10,7 @@ import coil.load
 import com.sumaya.hw_week06_day05.R
 import com.sumaya.hw_week06_day05.data.models.TmdbMovie
 
-class TmdbAdapter(val moviesData: List<TmdbMovie>) : RecyclerView.Adapter<CustomHolder>() {
+class TmdbAdapter(val moviesData: List<TmdbMovie>) : RecyclerView.Adapter<TmdbAdapter.CustomHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.tmdb_recycleview_item, parent, false)
@@ -29,11 +29,12 @@ class TmdbAdapter(val moviesData: List<TmdbMovie>) : RecyclerView.Adapter<Custom
     override fun getItemCount(): Int {
         return moviesData.size
     }
-}
-class CustomHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    val titleTV: TextView = itemView.findViewById(R.id.tvTitle)
-    val voteTV: TextView = itemView.findViewById(R.id.tvVote)
-    val dateTV: TextView = itemView.findViewById(R.id.tvDate)
-    val moviePoster: ImageView = itemView.findViewById(R.id.ivPoster)
 
+    class CustomHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val titleTV: TextView = itemView.findViewById(R.id.tvTitle)
+        val voteTV: TextView = itemView.findViewById(R.id.tvVote)
+        val dateTV: TextView = itemView.findViewById(R.id.tvDate)
+        val moviePoster: ImageView = itemView.findViewById(R.id.ivPoster)
+
+    }
 }
