@@ -1,6 +1,4 @@
-package com.shady.restandretrofit.ui
-
-
+package com.sumaya.hw_week06_day05.ui
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -30,3 +28,4 @@ class MainVM: ViewModel() {
         return photos
     }
 }
+
