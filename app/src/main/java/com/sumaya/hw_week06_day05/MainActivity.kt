@@ -1,5 +1,6 @@
 package com.sumaya.hw_week06_day05
 
+
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
@@ -101,7 +102,6 @@ class MainActivity : AppCompatActivity() {
             })
 
         }
-
 
         return super.onCreateOptionsMenu(menu)
     }

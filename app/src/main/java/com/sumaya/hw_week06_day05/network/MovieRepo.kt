@@ -14,7 +14,7 @@ class MovieRepo {
     }
 
     suspend fun searchMovie(searchKeyWord:String): MoviesData = withContext(Dispatchers.IO) {
-        api.searchMovie(searchKeyWord )
+        api.searchMovie(searchKeyWord)
 
 
 

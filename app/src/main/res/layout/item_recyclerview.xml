@@ -16,7 +16,26 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="WebViewLayout">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Suspicious0dp" />
+        <WebView
+            android:id="@+id/webView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+
+
+   </WebView>
 
         <ImageView
 
@@ -33,16 +52,33 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
-                android:textColor="@color/white"
+            <LinearLayout
+                android:gravity="center"
 
-                android:gravity="center_horizontal"
-                android:textSize="25sp"
-                android:id="@+id/id_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="Title" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/id_title"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="Title"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
 
             <LinearLayout
 
@@ -122,6 +158,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
