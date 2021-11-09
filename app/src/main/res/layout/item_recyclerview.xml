@@ -18,24 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="WebViewLayout">
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="Suspicious0dp" />
-        <WebView
-            android:id="@+id/webView_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-
-
-
-   </WebView>
 
         <ImageView
 
